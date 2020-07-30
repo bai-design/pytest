@@ -1,5 +1,7 @@
 import pytest
 
+
+@pytest.mark.usefixtures("test_read_env")
 class Test_browers(object):
 
     # @pytest.mark.flaky(reruns=3, reruns_delay=2)
@@ -10,7 +12,8 @@ class Test_browers(object):
         assert "renren" in get_url.current_url
 
     # @pytest.mark.dependency(depends=["test_default_get"])
-    @pytest.mark.parametrize(argnames="get_url", argvalues=["https://www.baidu.com/", "https://www.google.cn"],
+
+    @pytest.mark.parametrize(argnames="get_url", argvalues=[],
                              indirect=True, ids=["测试百度", "测试谷歌"])
     # @pytest.mark.run(order=3)
     def test_much_get(self, get_url):
@@ -19,5 +22,9 @@ class Test_browers(object):
     # @pytest.mark.run(order=2)
     @pytest.mark.xfail(reason="no test")
     @pytest.mark.funny
-    def testmath(self):
+    def test_math(self):
         assert True
+
+    def test_env(self, test_read_env):
+        print(f'url: {test_read_env["info"]["url"]}')
+        print(f'ids: {test_read_env["info"]["ids"]}')
