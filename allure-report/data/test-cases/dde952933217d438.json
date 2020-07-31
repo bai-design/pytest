@@ -1,0 +1,93 @@
+{
+  "uid" : "dde952933217d438",
+  "name" : "test_param[email_address0]",
+  "fullName" : "test_windows.test_link.Test_browers#test_param",
+  "historyId" : "d2ccdfba31dde77d154560b970606f98",
+  "time" : {
+    "start" : 1596178075775,
+    "stop" : 1596178075776,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "test_read_env",
+    "time" : {
+      "start" : 1596178075774,
+      "stop" : 1596178075775,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "32234359463a2436",
+      "name" : "stdout",
+      "source" : "32234359463a2436.txt",
+      "type" : "text/plain",
+      "size" : 30
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('test_read_env')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_windows"
+  }, {
+    "name" : "suite",
+    "value" : "test_link"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_browers"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NFEUTL"
+  }, {
+    "name" : "thread",
+    "value" : "12456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_windows.test_link"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "['1710448461@qq.com']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('test_read_env')" ]
+  },
+  "source" : "dde952933217d438.json",
+  "parameterValues" : [ "['1710448461@qq.com']" ]
+}

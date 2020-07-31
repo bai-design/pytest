@@ -21,13 +21,14 @@ def pytest_collection_modifyitems(items):
     for item in items:
         item._nodeid = item.nodeid.encode("utf-8").decode("unicode-escape")
         item.name = item.name.encode("utf-8").decode("unicode-escape")
-        if "default" in item.nodeid:
-            item.add_marker(pytest.mark.miss)
+        if "math" in item.nodeid:
+            item.add_marker(pytest.mark.math)
 
 def pytest_addoption(parser):
     parser.addoption("--env",
                      action="store",
-                     default="test")
+                     default="test",
+                     help="change enviroment")
 
 def pytest_configure(config):
     os.environ["env"] = config.getoption("--env", default="test")
@@ -35,7 +36,15 @@ def pytest_configure(config):
 @pytest.fixture(scope="function")
 def test_read_env():
     if os.environ["env"] == "test":
-        info = yaml.safe_load(open(file="./test.yml"))
+        info = yaml.safe_load(open(file="./test_windows/test.yml"))
     else:
-        info = yaml.safe_load(open(file="./produce.yml"))
+        info = yaml.safe_load(open(file="./test_windows/produce.yml"))
     return info
+#通过 方法动态生成测试用列
+def pytest_generate_tests(metafunc):
+    if "param" in metafunc.fixturenames:
+        metafunc.parametrize(argnames="param",
+                             argvalues=metafunc.module.datas,
+                             indirect=False,
+                             ids=metafunc.module.myids,
+                             scope="function")

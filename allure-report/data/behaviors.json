@@ -1,0 +1,96 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_param[eamil_address1]",
+    "uid" : "d174dcc2d7b57c05",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596178075767,
+      "stop" : 1596178075767,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "['1659935784@qq.com']" ]
+  }, {
+    "name" : "test_param[email_address0]",
+    "uid" : "dde952933217d438",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596178075775,
+      "stop" : 1596178075776,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "['1710448461@qq.com']" ]
+  }, {
+    "name" : "test_env",
+    "uid" : "647baf3b2e8c8ccc",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596178075783,
+      "stop" : 1596178075784,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_math",
+    "uid" : "121323295ec13d6d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1596178075791,
+      "stop" : 1596178075791,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_much_get[测试谷歌]",
+    "uid" : "e93fa3ff293e9070",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596178084385,
+      "stop" : 1596178084388,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'https://www.google.cn'" ]
+  }, {
+    "name" : "test_much_get[测试百度]",
+    "uid" : "2a8fa20d2bd511ac",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1596178094646,
+      "stop" : 1596178094649,
+      "duration" : 3
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'https://www.baidu.com/'" ]
+  }, {
+    "name" : "test_default_get[测试人人网]",
+    "uid" : "96dca6da028a6466",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1596178100410,
+      "stop" : 1596178100418,
+      "duration" : 8
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'https://renren.com/'" ]
+  } ]
+}

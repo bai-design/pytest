@@ -1,0 +1,153 @@
+{
+  "uid" : "e93fa3ff293e9070",
+  "name" : "test_much_get[测试谷歌]",
+  "fullName" : "test_windows.test_link.Test_browers#test_much_get",
+  "historyId" : "618af18651a1a6cfd984e798a74c2d7b",
+  "time" : {
+    "start" : 1596178084385,
+    "stop" : 1596178084388,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "open_driver",
+    "time" : {
+      "start" : 1596178075794,
+      "stop" : 1596178082539,
+      "duration" : 6745
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_url",
+    "time" : {
+      "start" : 1596178082541,
+      "stop" : 1596178084384,
+      "duration" : 1843
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "test_read_env",
+    "time" : {
+      "start" : 1596178082539,
+      "stop" : 1596178082540,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "14b36d5809d24a4d",
+      "name" : "stdout",
+      "source" : "14b36d5809d24a4d.txt",
+      "type" : "text/plain",
+      "size" : 36
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "open_driver::0",
+    "time" : {
+      "start" : 1596178100423,
+      "stop" : 1596178105153,
+      "duration" : 4730
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "get_url::0",
+    "time" : {
+      "start" : 1596178084390,
+      "stop" : 1596178084390,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('test_read_env')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_windows"
+  }, {
+    "name" : "suite",
+    "value" : "test_link"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_browers"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NFEUTL"
+  }, {
+    "name" : "thread",
+    "value" : "12456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_windows.test_link"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_url",
+    "value" : "'https://www.google.cn'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('test_read_env')" ]
+  },
+  "source" : "e93fa3ff293e9070.json",
+  "parameterValues" : [ "'https://www.google.cn'" ]
+}

@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 31 14:47:55 CST 2020","Fri Jul 31 14:47:55 CST 2020","1","test_windows","test_link","Test_browers","","","test_env",""
+"passed","Fri Jul 31 14:47:55 CST 2020","Fri Jul 31 14:47:55 CST 2020","0","test_windows","test_link","Test_browers","","","test_param[eamil_address1]",""
+"passed","Fri Jul 31 14:48:04 CST 2020","Fri Jul 31 14:48:04 CST 2020","3","test_windows","test_link","Test_browers","","","test_much_get[测试谷歌]",""
+"failed","Fri Jul 31 14:47:55 CST 2020","Fri Jul 31 14:47:55 CST 2020","0","test_windows","test_link","Test_browers","","","test_math",""
+"failed","Fri Jul 31 14:48:20 CST 2020","Fri Jul 31 14:48:20 CST 2020","8","test_windows","test_link","Test_browers","","","test_default_get[测试人人网]",""
+"passed","Fri Jul 31 14:47:55 CST 2020","Fri Jul 31 14:47:55 CST 2020","1","test_windows","test_link","Test_browers","","","test_param[email_address0]",""
+"passed","Fri Jul 31 14:48:14 CST 2020","Fri Jul 31 14:48:14 CST 2020","3","test_windows","test_link","Test_browers","","","test_much_get[测试百度]",""

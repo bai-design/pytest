@@ -1,6 +1,7 @@
 import pytest
 
-
+datas = [["1710448461@qq.com"], ["1659935784@qq.com"]]
+myids = ["email_address0", "eamil_address1"]
 @pytest.mark.usefixtures("test_read_env")
 class Test_browers(object):
 
@@ -13,7 +14,7 @@ class Test_browers(object):
 
     # @pytest.mark.dependency(depends=["test_default_get"])
 
-    @pytest.mark.parametrize(argnames="get_url", argvalues=[],
+    @pytest.mark.parametrize(argnames="get_url", argvalues=["https://www.baidu.com/","https://www.google.cn"],
                              indirect=True, ids=["测试百度", "测试谷歌"])
     # @pytest.mark.run(order=3)
     def test_much_get(self, get_url):
@@ -28,3 +29,6 @@ class Test_browers(object):
     def test_env(self, test_read_env):
         print(f'url: {test_read_env["info"]["url"]}')
         print(f'ids: {test_read_env["info"]["ids"]}')
+
+    def test_param(self, param):
+        print(f"message:{param}")
